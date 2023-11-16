@@ -7,9 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+
+  <!-- HwpObject 1.0 Type Library -->
   <ItemGroup>
    <Reference Include="HwpObjectLib">
-     <HintPath>D:\C샵hwp연습용\2023_C-_hwp\Chapter2\aaa\obj\Debug\net8.0\Interop.HwpObjectLib.dll</HintPath>
+     <HintPath>D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_hwp_vscode\Chapter2\aaa\obj\Debug\net8.0\Interop.HwpObjectLib.dll</HintPath>
      <WrapperTool>tlbimp</WrapperTool>
      <VersionMinor>0</VersionMinor>
      <VersionMajor>1</VersionMajor>

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\C샵hwp연습용\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
+    "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {}
   },
   "projects": {
-    "D:\\C샵hwp연습용\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
+    "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\C샵hwp연습용\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectUniqueName": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "projectName": "ConsoleApp1",
-        "projectPath": "D:\\C샵hwp연습용\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+        "projectPath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
         "packagesPath": "C:\\Users\\gdcom\\.nuget\\packages\\",
-        "outputPath": "D:\\C샵hwp연습용\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\obj\\",
+        "outputPath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\gdcom\\AppData\\Roaming\\NuGet\\NuGet.Config",

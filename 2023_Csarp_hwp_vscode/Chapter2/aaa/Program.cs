@@ -10,8 +10,8 @@ internal class Program
         Console.WriteLine("Hello, World!");
         try
         {
-            string FilePath = @"D:\C샵hwp연습용\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\TempData\h25_certificate_of_award.hwp";
-            //string FilePath2 = @"D:\C샵hwp연습용\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\TempData\h25_certificate_of_award2.hwp";
+            string FilePath = @"D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\TempData\h25_certificate_of_award.hwp";
+            //string FilePath2 = @"D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\TempData\h25_certificate_of_award2.hwp";
             Console.WriteLine(FilePath);
             // HwpObject 객체 생성
             IHwpObject hwp = new HwpObject();
@@ -21,7 +21,6 @@ internal class Program
             hwp.Open(FilePath, "", "");
 
             //hwp.PutFieldText("주최자", "카카오");
-
 
             //hwp.SaveAs(FilePath2);
             // HwpCtrl 종료

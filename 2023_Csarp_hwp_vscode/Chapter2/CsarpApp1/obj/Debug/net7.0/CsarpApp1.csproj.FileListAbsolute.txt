@@ -1,0 +1,15 @@
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\bin\Debug\net7.0\CsarpApp1.exe
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\bin\Debug\net7.0\CsarpApp1.deps.json
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\bin\Debug\net7.0\CsarpApp1.runtimeconfig.json
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\bin\Debug\net7.0\CsarpApp1.dll
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\bin\Debug\net7.0\CsarpApp1.pdb
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\CsarpApp1.GeneratedMSBuildEditorConfig.editorconfig
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\CsarpApp1.AssemblyInfoInputs.cache
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\CsarpApp1.AssemblyInfo.cs
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\CsarpApp1.csproj.CoreCompileInputs.cache
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\CsarpApp1.dll
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\refint\CsarpApp1.dll
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\CsarpApp1.pdb
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\CsarpApp1.genruntimeconfig.cache
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\ref\CsarpApp1.dll
+D:\C샵hwp연습용\2023_C-_hwp\Chapter2\CsarpApp1\obj\Debug\net7.0\CsarpApp1.sourcelink.json

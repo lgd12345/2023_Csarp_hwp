@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\C샵hwp연습용\\2023_C-_hwp\\Chapter2\\CsarpApp2winform\\CsarpApp2winform.csproj": {}
+  },
+  "projects": {
+    "D:\\C샵hwp연습용\\2023_C-_hwp\\Chapter2\\CsarpApp2winform\\CsarpApp2winform.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\C샵hwp연습용\\2023_C-_hwp\\Chapter2\\CsarpApp2winform\\CsarpApp2winform.csproj",
+        "projectName": "CsarpApp2winform",
+        "projectPath": "D:\\C샵hwp연습용\\2023_C-_hwp\\Chapter2\\CsarpApp2winform\\CsarpApp2winform.csproj",
+        "packagesPath": "C:\\Users\\gdcom\\.nuget\\packages\\",
+        "outputPath": "D:\\C샵hwp연습용\\2023_C-_hwp\\Chapter2\\CsarpApp2winform\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\gdcom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\uipath연습\\uipath\\라이브러리파일": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "System.Drawing.Common": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "System.Windows.Forms": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "Qncoe6MpUR82y5xHVba4V5/h3vlen20XJgU6zZ+fbExoVjOpEAcBNer1tT2xdBE9AOiPdj/aFYXSSkP/NEEw3w==",
+  "success": true,
+  "projectFilePath": "D:\\C샵hwp연습용\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,8 @@
+# 2023_C-_hwp
+# dotnet new winforms -n 파일이름
+# dotnet build
+# dotnet run
+# dotnet new console -n 파일이름
+# 한줄복사 shift alt 화살표
+# dotnet restore, dotnet build, dotnet run, dotnet add package ㅇㅇㅇ, dotnet add package System.Drawing.Common 
+# Ctrl+C 프로그램종료

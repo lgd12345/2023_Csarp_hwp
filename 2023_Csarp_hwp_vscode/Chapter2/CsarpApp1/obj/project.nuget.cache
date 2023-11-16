@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "d0WB++/rCzya7MMERlsdt+Y9ST21sXIwtc8SpPRfMYdHt3XNn82Nvf6xH5r8Gxy2dsm1Khyu2nrUvxZ6QUFDqA==",
+  "success": true,
+  "projectFilePath": "D:\\C샵hwp연습용\\2023_C-_hwp\\Chapter2\\CsarpApp1\\CsarpApp1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.14\\microsoft.netcore.app.host.win-x64.7.0.14.nupkg.sha512"
+  ],
+  "logs": []
+}

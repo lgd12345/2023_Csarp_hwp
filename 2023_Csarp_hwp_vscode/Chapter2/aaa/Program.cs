@@ -38,7 +38,8 @@ internal class Program
 
             //hwp.SaveAs(FilePath2);
             // HwpCtrl 종료
-            // COM 객체 해제 Marshal.ReleaseComObject(hwp);
+            // COM 객체 해제 
+            //Marshal.ReleaseComObject(hwp);
             //Marshal.FinalReleaseComObject(hwp);
             //hwp = null;
        }

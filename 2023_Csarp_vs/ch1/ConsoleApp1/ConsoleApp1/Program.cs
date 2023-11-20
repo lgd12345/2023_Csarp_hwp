@@ -37,30 +37,30 @@ internal class Program
             Console.WriteLine(FilePath);
 
             //레지스트리에 경로 설정해주기
-            string Str_M_Path = @"C:\hwp_보안모듈_Automation\보안모듈(Automation)\FilePathCheckerModuleExample.dll";
-            string HNCRootkey = @"HKEY_Current_User\SOFTWARE\HNC\HwpAutomation\Modules";
+            //string Str_M_Path = @"C:\hwp_보안모듈_Automation\보안모듈(Automation)\FilePathCheckerModuleExample.dll";
+            //string HNCRootkey = @"HKEY_Current_User\SOFTWARE\HNC\HwpAutomation\Modules";
 
-            Registry.SetValue(HNCRootkey, "FilePathCheckerModuleExample", Str_M_Path);
+            //Registry.SetValue(HNCRootkey, "FilePathCheckerModuleExample", Str_M_Path);
 
-
-            Console.WriteLine("널아님");
             // HwpObject 객체 생성
             IHwpObject hwp = new HwpObject();
 
-            hwp.RegisterModule("FilePathCheckDLL", "FilePathCheckerModuleExample");
+            //hwp.RegisterModule("FilePathCheckDLL", "FilePathCheckerModuleExample");
 
             hwp.XHwpWindows.Active_XHwpWindow.Visible = true;
 
             hwp.Open(FilePath, "", "");
 
-            hwp.PutFieldText("주최자", "카카오");
+            //hwp.PutFieldText("주최자", "카카오");
 
 
             //hwp.SaveAs(FilePath2);
             // Hwp 종료
             killProcess(processName);
             
-            // COM 객체 해제 Marshal.ReleaseComObject(hwp);
+            // COM 객체 해제
+            Marshal.ReleaseComObject(hwp);
+            Console.WriteLine("객체해제");
             //Marshal.FinalReleaseComObject(hwp);
             //hwp = null;
 

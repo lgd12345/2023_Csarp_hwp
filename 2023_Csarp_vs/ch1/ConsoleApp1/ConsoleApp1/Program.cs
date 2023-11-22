@@ -47,12 +47,15 @@ internal class Program
 
             //hwp.RegisterModule("FilePathCheckDLL", "FilePathCheckerModuleExample");
 
-            hwp.XHwpWindows.Active_XHwpWindow.Visible = true;
-
+            //hwp.XHwpWindows.Active_XHwpWindow.Visible = true;
+            var xHwpWindows = hwp.XHwpWindows;
+            var activeXHwpWindow = xHwpWindows.GetType().InvokeMember("Active_XHwpWindow", BindingFlags.GetProperty, null, xHwpWindows, null);
+            activeXHwpWindow.GetType().InvokeMember("Visible", BindingFlags.SetProperty, null, activeXHwpWindow, new object[] { true });
+            
             hwp.Open(FilePath, "", "");
 
             //hwp.PutFieldText("주최자", "카카오");
-
+            
 
             //hwp.SaveAs(FilePath2);
             // Hwp 종료

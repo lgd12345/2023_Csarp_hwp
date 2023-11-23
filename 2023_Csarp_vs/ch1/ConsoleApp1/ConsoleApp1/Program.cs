@@ -37,20 +37,17 @@ internal class Program
             Console.WriteLine(FilePath);
 
             //레지스트리에 경로 설정해주기
-            //string Str_M_Path = @"C:\hwp_보안모듈_Automation\보안모듈(Automation)\FilePathCheckerModuleExample.dll";
-            //string HNCRootkey = @"HKEY_Current_User\SOFTWARE\HNC\HwpAutomation\Modules";
+            string Str_M_Path = @"C:\hwp_보안모듈_Automation\보안모듈(Automation)\FilePathCheckerModuleExample.dll";
+            string HNCRootkey = @"HKEY_Current_User\SOFTWARE\HNC\HwpAutomation\Modules";
 
-            //Registry.SetValue(HNCRootkey, "FilePathCheckerModuleExample", Str_M_Path);
+            Registry.SetValue(HNCRootkey, "FilePathCheckerModuleExample", Str_M_Path);
 
             // HwpObject 객체 생성
             IHwpObject hwp = new HwpObject();
 
-            //hwp.RegisterModule("FilePathCheckDLL", "FilePathCheckerModuleExample");
+            hwp.RegisterModule("FilePathCheckDLL", "FilePathCheckerModuleExample");
 
-            //hwp.XHwpWindows.Active_XHwpWindow.Visible = true;
-            var xHwpWindows = hwp.XHwpWindows;
-            var activeXHwpWindow = xHwpWindows.GetType().InvokeMember("Active_XHwpWindow", BindingFlags.GetProperty, null, xHwpWindows, null);
-            activeXHwpWindow.GetType().InvokeMember("Visible", BindingFlags.SetProperty, null, activeXHwpWindow, new object[] { true });
+            hwp.XHwpWindows.Active_XHwpWindow.Visible = true;
             
             hwp.Open(FilePath, "", "");
 
@@ -59,7 +56,7 @@ internal class Program
 
             //hwp.SaveAs(FilePath2);
             // Hwp 종료
-            killProcess(processName);
+            //killProcess(processName);
             
             // COM 객체 해제
             Marshal.ReleaseComObject(hwp);

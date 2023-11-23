@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>HanObject_dll</id>
+    <version>1.0.0</version>
+    <authors>HanObject_dll</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="926615b5c3229253f8c54431871b8a4d7c14b9fc" />
+    <dependencies>
+      <group targetFramework="net6.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch2\HanObject_dll\HanObject_dll\bin\Debug\net6.0\HanObject_dll.runtimeconfig.json" target="lib\net6.0\HanObject_dll.runtimeconfig.json" />
+    <file src="D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch2\HanObject_dll\HanObject_dll\bin\Debug\net6.0\HanObject_dll.dll" target="lib\net6.0\HanObject_dll.dll" />
+  </files>
+</package>

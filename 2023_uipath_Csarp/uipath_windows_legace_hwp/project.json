@@ -4,7 +4,7 @@
   "description": "uipath_windows_legace_hwp dll을 nuget패키지에 감싸서 종속성넣기\r\n특이점.. 현재 레거시에서만 가능 ",
   "main": "Main.xaml",
   "dependencies": {
-    "MyPackage": "[1.0.0]",
+    "hwplib_Legace": "[1.0.0]",
     "UiPath.Excel.Activities": "[2.22.2]",
     "UiPath.Mail.Activities": "[1.21.1]",
     "UiPath.System.Activities": "[23.10.2]",

@@ -210,6 +210,15 @@
           }
         }
       },
+      "hwplib_Legace/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/Interop.HwpObjectLib.dll": {}
+        }
+      },
       "MailKit/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -1046,15 +1055,6 @@
             "codeLanguage": "any",
             "copyToOutput": false
           }
-        }
-      },
-      "MyPackage/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/Interop.HwpObjectLib.dll": {}
         }
       },
       "Newtonsoft.Json/13.0.1": {
@@ -3014,6 +3014,15 @@
           }
         }
       },
+      "hwplib_Legace/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/Interop.HwpObjectLib.dll": {}
+        }
+      },
       "MailKit/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -3847,15 +3856,6 @@
             "codeLanguage": "any",
             "copyToOutput": false
           }
-        }
-      },
-      "MyPackage/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/_._": {}
-        },
-        "runtime": {
-          "lib/Interop.HwpObjectLib.dll": {}
         }
       },
       "Newtonsoft.Json/13.0.1": {
@@ -5896,6 +5896,17 @@
         "lib/uap10.0/HtmlAgilityPack.pri"
       ]
     },
+    "hwplib_Legace/1.0.0": {
+      "sha512": "hYg3vZNnUvGkADkA43gghYWv9YCSiF+im1yY9YwMVXDeo6ctF9D/hzzvIBBjXnWUw7kgg6QASVpigJH1ZWjOjg==",
+      "type": "package",
+      "path": "hwplib_legace/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "hwplib_legace.1.0.0.nupkg.sha512",
+        "hwplib_legace.nuspec",
+        "lib/Interop.HwpObjectLib.dll"
+      ]
+    },
     "MailKit/3.1.1": {
       "sha512": "NprdMF0ABNWOqQUuqz45X5YkJK6f3vtYwwvqR6nGVdmrZ7HkahNbSATpOZ5Rj3W1cgDGf/iD8vs/oCyZ4wUO7g==",
       "type": "package",
@@ -7110,17 +7121,6 @@
         "images/nuget-icon.png",
         "mimetypes.2.4.1.nupkg.sha512",
         "mimetypes.nuspec"
-      ]
-    },
-    "MyPackage/1.0.0": {
-      "sha512": "Ga9y6tuy8v7vxBkX3gVWejbhELgzuSRdQwWJ7Iep1NOZKahxXZqb+9APkm2Ddxj6Al+wmVQJYE9dSyRYgB4tcQ==",
-      "type": "package",
-      "path": "mypackage/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/Interop.HwpObjectLib.dll",
-        "mypackage.1.0.0.nupkg.sha512",
-        "mypackage.nuspec"
       ]
     },
     "Newtonsoft.Json/13.0.1": {
@@ -9899,12 +9899,12 @@
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
-      "MyPackage >= 1.0.0 <= 1.0.0",
       "UiPath.Excel.Activities >= 2.22.2 <= 2.22.2",
       "UiPath.Mail.Activities >= 1.21.1 <= 1.21.1",
       "UiPath.System.Activities >= 23.10.2 <= 23.10.2",
       "UiPath.Testing.Activities >= 23.10.0 <= 23.10.0",
-      "UiPath.UIAutomation.Activities >= 23.10.3 <= 23.10.3"
+      "UiPath.UIAutomation.Activities >= 23.10.3 <= 23.10.3",
+      "hwplib_Legace >= 1.0.0 <= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -9914,18 +9914,13 @@
     "restore": {
       "projectUniqueName": "uipath_windows_legace_hwp",
       "projectName": "uipath_windows_legace_hwp",
-      "projectPath": "C:\\Users\\gdcom\\Desktop\\빈프로세스2\\.local",
+      "projectPath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_uipath_Csarp\\uipath_windows_legace_hwp\\.local",
       "packagesPath": "C:\\Users\\gdcom\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\gdcom\\Desktop\\빈프로세스2\\.local"
+      "outputPath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_uipath_Csarp\\uipath_windows_legace_hwp\\.local"
     },
     "frameworks": {
       "net461": {
         "dependencies": {
-          "MyPackage": {
-            "include": "Runtime",
-            "target": "Package",
-            "version": "[1.0.0, 1.0.0]"
-          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
@@ -9950,6 +9945,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[23.10.3, 23.10.3]"
+          },
+          "hwplib_Legace": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.0, 1.0.0]"
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Users\\gdcom\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"

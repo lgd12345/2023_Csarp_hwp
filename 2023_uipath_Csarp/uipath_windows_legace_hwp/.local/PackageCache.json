@@ -226,13 +226,13 @@
     },
     {
       "Package": {
-        "Id": "MyPackage",
+        "Id": "hwplib_Legace",
         "Version": "1.0.0"
       },
       "Assemblies": [
-        "C:\\Users\\gdcom\\.nuget\\packages\\mypackage\\1.0.0\\lib/Interop.HwpObjectLib.dll"
+        "C:\\Users\\gdcom\\.nuget\\packages\\hwplib_legace\\1.0.0\\lib/Interop.HwpObjectLib.dll"
       ],
-      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\mypackage\\1.0.0"
+      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\hwplib_legace\\1.0.0"
     }
   ],
   "Conflicts": [],
@@ -368,6 +368,11 @@
     "HtmlAgilityPack": {
       "Id": "HtmlAgilityPack",
       "Version": "1.11.38",
+      "Dependencies": []
+    },
+    "hwplib_Legace": {
+      "Id": "hwplib_Legace",
+      "Version": "1.0.0",
       "Dependencies": []
     },
     "MailKit": {
@@ -854,11 +859,6 @@
     "MimeTypes": {
       "Id": "MimeTypes",
       "Version": "2.4.1",
-      "Dependencies": []
-    },
-    "MyPackage": {
-      "Id": "MyPackage",
-      "Version": "1.0.0",
       "Dependencies": []
     },
     "Newtonsoft.Json": {
@@ -1716,6 +1716,16 @@
     },
     {
       "Package": {
+        "Id": "hwplib_Legace",
+        "Version": "1.0.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\gdcom\\.nuget\\packages\\hwplib_legace\\1.0.0\\lib\\Interop.HwpObjectLib.dll"
+      ],
+      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\hwplib_legace\\1.0.0"
+    },
+    {
+      "Package": {
         "Id": "MailKit",
         "Version": "3.1.1"
       },
@@ -2120,16 +2130,6 @@
       },
       "Assemblies": [],
       "Path": "C:\\Users\\gdcom\\.nuget\\packages\\mimetypes\\2.4.1"
-    },
-    {
-      "Package": {
-        "Id": "MyPackage",
-        "Version": "1.0.0"
-      },
-      "Assemblies": [
-        "C:\\Users\\gdcom\\.nuget\\packages\\mypackage\\1.0.0\\lib\\Interop.HwpObjectLib.dll"
-      ],
-      "Path": "C:\\Users\\gdcom\\.nuget\\packages\\mypackage\\1.0.0"
     },
     {
       "Package": {

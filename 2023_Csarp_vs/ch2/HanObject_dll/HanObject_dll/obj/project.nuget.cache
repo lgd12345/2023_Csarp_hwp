@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "pmqIKUkfQoxpIVpHDXIVlWXKWhYQwKXl8T1OfkJBEYYQ6KHE++xAq2R/E+jv9Ct837GhHfRk5lFzlAPtrKFb8w==",
+  "success": true,
+  "projectFilePath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_vs\\ch2\\HanObject_dll\\HanObject_dll\\HanObject_dll.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
+  "logs": []
+}

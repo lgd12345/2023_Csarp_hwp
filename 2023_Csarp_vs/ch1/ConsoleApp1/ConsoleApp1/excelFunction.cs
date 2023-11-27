@@ -1,40 +1,34 @@
 ﻿using System.Runtime.InteropServices;
-using Excel = Microsoft.Office.Interop.Excel;
 using System.Data;
+using ExcelDataReader;
+using System.Text;
 
 public static class ExcelReader
 {
-    public static Excel.Range ReadExcelFile(string Ex_filePath, string rangeAdd)
+    public static DataTable ReadExcel(string filePath, int sheetIndex)
     {
-        Excel.Application excelApp = new Excel.Application();
-        Excel.Workbook workbook = excelApp.Workbooks.Open(Ex_filePath);
-        Excel.Worksheet worksheet = (Excel.Worksheet)workbook.Sheets[1];
-        Excel.Range range = worksheet.Range[rangeAdd];
-
-        // 결과 사용
-        PrintExcelRange(range);
-
-        static void PrintExcelRange(Excel.Range range)
+        // .NET Core에서 추가 인코딩을 지원하기 위해 사용하는 코드
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
+        
+        using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
         {
-            object[,] values = range.Value;
+            // 한글 깨짐 현상 해결 가능
+            ExcelReaderConfiguration config = new ExcelReaderConfiguration();
+            config.FallbackEncoding = Encoding.GetEncoding("ks_c_5601-1987");
 
-            for (int row = 1; row <= values.GetLength(0); row++)
+            using (var reader = ExcelReaderFactory.CreateReader(stream, config))
             {
-                for (int col = 1; col <= values.GetLength(1); col++)
+                var result = reader.AsDataSet(new ExcelDataSetConfiguration()
                 {
-                    Console.Write($"{values[row, col]}\t");
-                }
-                Console.WriteLine();
+                    ConfigureDataTable = (tableReader) => new ExcelDataTableConfiguration()
+                    {
+                        //Column 자동생성을 무시하고 첫번째 행을 열로 자동 지정.
+                        //UseHeaderRow = true
+                        UseHeaderRow = false
+                    }
+                });
+                return result.Tables[sheetIndex];
             }
         }
-
-        // Excel 객체 해제
-        Marshal.ReleaseComObject(worksheet);
-        workbook.Close();
-        Marshal.ReleaseComObject(workbook);
-        excelApp.Quit();
-        Marshal.ReleaseComObject(excelApp);
-
-        return range;
     }
 }

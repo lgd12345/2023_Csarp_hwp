@@ -31,4 +31,7 @@ D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\obj
 D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.pdb
 D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.genruntimeconfig.cache
 D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ref\ConsoleApp1.dll
-D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\Interop.Microsoft.Office.Interop.Excel.dll
+D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ExcelDataReader.dll
+D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\bin\Debug\net7.0\ExcelDataReader.DataSet.dll
+D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.AssemblyReference.cache
+D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\obj\Debug\net7.0\ConsoleApp1.csproj.CopyComplete

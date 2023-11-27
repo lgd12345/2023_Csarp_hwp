@@ -7,7 +7,6 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Runtime.Versioning;
-using Excel = Microsoft.Office.Interop.Excel;
 
 [assembly: SupportedOSPlatform("windows")]
 internal class Program
@@ -33,11 +32,21 @@ internal class Program
             */
             //엑셀경로와 범위 설정
             string Ex_filePath = @"D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\TempData\수상자목록.xlsx";
-            string rangeAdd = "A1:F8";
+            int sheetIndex = 0;
 
+            // ExcelReader 클래스의 ReadExcel 메서드를 사용하여 데이터를 읽어옵니다.
+            DataTable dt = ExcelReader.ReadExcel(Ex_filePath, sheetIndex);
+            //var dt
+            //var rows = dt.AsEnumerable().Select(r => string.Join("\t", r.ItemArray));
+            //var result = string.Join(Environment.NewLine, rows);
 
-            Excel.Range range = ExcelReader.ReadExcelFile(Ex_filePath, rangeAdd);
-            
+            // 출력 datatable
+            string result = (from row in dt.AsEnumerable()
+                             select string.Join("\t", row.ItemArray)
+                            ).Aggregate((current, next) => current + Environment.NewLine + next);
+
+            Console.WriteLine(result);
+
             string processName = "Hwp";
             string FilePath = @"D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\TempData\h25_certificate_of_award.hwp";
             //string FilePath2 = @"D:\C샵hwp연습용\2023_Csarp_hwp\2023_Csarp_vs\ch1\ConsoleApp1\ConsoleApp1\TempData\h25_certificate_of_award2.hwp";

@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OVYrXY142Du7YiUO1aqv1o+7AnsU1iZgO+Nx6i8uZa7XqzkEv+JV+Me6Wh5A+uHn2P4oXA+OUbLeY7eV8mNA5A==",
+  "dgSpecHash": "+buzJfsZ59DEs4GujIgzFMUcmDVX+Pthk9k5OMEbpZpyujqRnM3vMWdgSPqqdvqFMluxfaNwelxLuqkAo5ga/A==",
   "success": true,
   "projectFilePath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_vs\\ch1\\ConsoleApp1\\ConsoleApp1\\ConsoleApp1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\gdcom\\.nuget\\packages\\exceldatareader\\3.6.0\\exceldatareader.3.6.0.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\exceldatareader.dataset\\3.6.0\\exceldatareader.dataset.3.6.0.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
     "C:\\Users\\gdcom\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512",

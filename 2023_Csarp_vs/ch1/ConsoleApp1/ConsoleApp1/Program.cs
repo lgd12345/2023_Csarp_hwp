@@ -66,11 +66,13 @@ internal class Program
             hwp.XHwpWindows.Active_XHwpWindow.Visible = true;
             //화면열기
             hwp.Open(FilePath, "", "");
+            //전체화면
+            hwp.Run("FrameFullScreen");
             //필드 리스트로 출력하기
-            string Str_Fields = hwp.GetFieldList(1,"");
+            string Str_Fields = hwp.GetFieldList(2,"");
             Console.WriteLine("필드리스트내용 : " + Str_Fields);
             string[] str_filed = Str_Fields.Split('\x02');
-            Console.WriteLine(string.Join(",", str_filed));
+            Console.WriteLine("출력 str_filed : " + string.Join(",", str_filed));
 
             //List<string> HFieldList = new List<string>(str_filed);
             //foreach (string a in HFieldList)
@@ -81,8 +83,14 @@ internal class Program
             //문서 현재쪽 전체선택 후 복사해서 마지막쪽으로 가서 붙여넣기
             hwp.Run("SelectAll");
             hwp.Run("Copy");
-            hwp.MovePos(3,0,0);
-            hwp.Run("Paste");
+
+            foreach (int i in Enumerable.Range(0,dt.Rows.Count-2))
+            {
+                //Console.WriteLine(dt.Rows[i+1][0].ToString());
+                hwp.MovePos(3,0,0);
+                hwp.Run("Paste");
+            }
+            
 
             //hwp.PutFieldText("주최자", "카카오");
             

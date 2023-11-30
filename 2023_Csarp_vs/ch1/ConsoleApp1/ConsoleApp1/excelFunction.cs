@@ -23,8 +23,8 @@ public static class ExcelReader
                     ConfigureDataTable = (tableReader) => new ExcelDataTableConfiguration()
                     {
                         //Column 자동생성을 무시하고 첫번째 행을 열로 자동 지정.
-                        //UseHeaderRow = true
-                        UseHeaderRow = false
+                        UseHeaderRow = true
+                        //UseHeaderRow = false
                     }
                 });
                 return result.Tables[sheetIndex];

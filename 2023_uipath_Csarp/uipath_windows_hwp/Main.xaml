@@ -77,36 +77,13 @@
       <AssemblyReference>uipath_windows_hwp.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="545.6,598.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="449.6,276.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="483.2,281.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" WorkbookPath="TempData\수상자목록.xlsx">
-      <ui:ExcelApplicationScope.Body>
-        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="449.6,172" sap2010:WorkflowViewState.IdRef="Sequence_2">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ui:ExcelReadRange DataTable="{x:Null}" AddHeaders="True" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
-              <ui:ExcelReadRange.Range>
-                <InArgument x:TypeArguments="x:String">
-                  <Literal x:TypeArguments="x:String" Value="" />
-                </InArgument>
-              </ui:ExcelReadRange.Range>
-            </ui:ExcelReadRange>
-          </Sequence>
-        </ActivityAction>
-      </ui:ExcelApplicationScope.Body>
-    </ui:ExcelApplicationScope>
-    <ui:InvokeCode ContinueOnError="{x:Null}" Code="string FilePath = @&quot;D:\C샵hwp연습용\2023_Csarp_hwp\2023_uipath_Csarp\uipath_windows_hwp\TempData\h25_certificate_of_award.hwp&quot;;&#xA;System.Console.WriteLine(FilePath);&#xA;&#xA;//레지스트리에 경로 설정해주기&#xA;string Str_M_Path = @&quot;C:\hwp_보안모듈_Automation\보안모듈(Automation)\FilePathCheckerModuleExample.dll&quot;;&#xA;string HNCRootkey = @&quot;HKEY_CURRENT_USER\Software\HNC\HwpAutomation\Modules&quot;;&#xA;&#xA;Microsoft.Win32.Registry.SetValue(HNCRootkey,&quot;FilePathCheckerModuleExample&quot;,Str_M_Path);&#xA;&#xA;try&#xA;{&#xA;    HwpObjectLib.IHwpObject hwp = new HwpObjectLib.HwpObject();&#xA;&#x9;&#xA;&#x9;hwp.RegisterModule(&quot;FilePathCheckDLL&quot;,&quot;FilePathCheckerModuleExample&quot;);&#xA;&#x9;&#xA;&#x9;//화면보이기 dynamic 으로 동적으로 처리 하기&#xA;&#x9;dynamic xHwpWin = hwp.XHwpWindows;&#xA;&#x9;dynamic activeXHwpWin = xHwpWin.Active_XHwpWindow;&#xA;&#x9;activeXHwpWin.Visible = true;&#xA;&#x9;&#xA;&#x9;System.Console.WriteLine(&quot;화면보이기확인용&quot;);&#xA;&#x9;&#xA;    hwp.Open(FilePath, &quot;&quot;, &quot;&quot;);&#xA;&#x9;&#xA;&#x9;hwp.PutFieldText(&quot;주최자&quot;, &quot;카카오&quot;);&#xA;&#x9;&#xA;    hwp.Quit();&#xA;}&#xA;catch (Exception ex)&#xA;{&#xA;    Console.WriteLine($&quot;An error occurred: {ex.Message}&quot;);&#xA;}&#xA;" DisplayName="dynamic사용한거_Invoke Code" sap:VirtualizedContainerService.HintSize="483.2,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="string FilePath = @&quot;D:\C샵hwp연습용\2023_Csarp_hwp\2023_uipath_Csarp\uipath_windows_hwp\TempData\h25_certificate_of_award.hwp&quot;;&#xA;System.Console.WriteLine(FilePath);&#xA;&#xA;//레지스트리에 경로 설정해주기&#xA;string Str_M_Path = @&quot;C:\hwp_보안모듈_Automation\보안모듈(Automation)\FilePathCheckerModuleExample.dll&quot;;&#xA;string HNCRootkey = @&quot;HKEY_CURRENT_USER\Software\HNC\HwpAutomation\Modules&quot;;&#xA;&#xA;Microsoft.Win32.Registry.SetValue(HNCRootkey,&quot;FilePathCheckerModuleExample&quot;,Str_M_Path);&#xA;&#xA;try&#xA;{&#xA;    HwpObjectLib.IHwpObject hwp = new HwpObjectLib.HwpObject();&#xA;&#x9;&#xA;&#x9;hwp.RegisterModule(&quot;FilePathCheckDLL&quot;,&quot;FilePathCheckerModuleExample&quot;);&#xA;&#x9;&#xA;&#x9;//화면보이기 dynamic 으로 동적으로 처리 하기&#xA;&#x9;dynamic xHwpWin = hwp.XHwpWindows;&#xA;&#x9;dynamic activeXHwpWin = xHwpWin.Active_XHwpWindow;&#xA;&#x9;activeXHwpWin.Visible = true;&#xA;&#x9;&#xA;&#x9;System.Console.WriteLine(&quot;화면보이기확인용&quot;);&#xA;&#x9;&#xA;    hwp.Open(FilePath, &quot;&quot;, &quot;&quot;);&#xA;&#x9;&#xA;&#x9;hwp.PutFieldText(&quot;주최자&quot;, &quot;카카오&quot;);&#xA;&#x9;&#xA;    hwp.Quit();&#xA;}&#xA;catch (Exception ex)&#xA;{&#xA;    Console.WriteLine($&quot;An error occurred: {ex.Message}&quot;);&#xA;}&#xA;" DisplayName="dynamic사용한거_Invoke Code" sap:VirtualizedContainerService.HintSize="387.2,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
       <ui:InvokeCode.Arguments>
         <scg:Dictionary x:TypeArguments="x:String, Argument" />
       </ui:InvokeCode.Arguments>

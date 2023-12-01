@@ -1,0 +1,222 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1240.8,1960" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>HwpObjectLib</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Interop.HwpObjectLib</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Linq.Parallel</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>System.Linq.Queryable</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="604.8,1895.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="FilePath" />
+      <Variable x:TypeArguments="x:String" Name="FilePath2" />
+      <Variable x:TypeArguments="x:String" Name="excelPath" />
+      <Variable x:TypeArguments="ui:WorkbookApplication" Name="work_DT" />
+      <Variable x:TypeArguments="sd:DataTable" Name="DT" />
+      <Variable x:TypeArguments="x:String" Name="str_DT" />
+      <Variable x:TypeArguments="sd:DataTable" Name="outDT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="초기화 Sequence" sap:VirtualizedContainerService.HintSize="542.4,466.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:KillProcess AppliesTo="{x:Null}" ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="480,134.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="Hwp" />
+      <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="480,180" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+        <ui:MultipleAssign.AssignOperations>
+          <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[FilePath]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">["D:\C샵hwp연습용\2023_Csarp_hwp\2023_uipath_Csarp\uipath_windows_excel_hwp\TempData\h25_certificate_of_award.hwp"]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[FilePath2]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">["D:\C샵hwp연습용\2023_Csarp_hwp\2023_uipath_Csarp\uipath_windows_excel_hwp\TempData\h25_certificate_of_award완료.hwp"]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+            <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+              <ui:AssignOperation.To>
+                <OutArgument x:TypeArguments="x:String">[excelPath]</OutArgument>
+              </ui:AssignOperation.To>
+              <ui:AssignOperation.Value>
+                <InArgument x:TypeArguments="x:String">["D:\C샵hwp연습용\2023_Csarp_hwp\2023_uipath_Csarp\uipath_windows_excel_hwp\TempData\수상자목록.xlsx"]</InArgument>
+              </ui:AssignOperation.Value>
+            </ui:AssignOperation>
+          </scg:List>
+        </ui:MultipleAssign.AssignOperations>
+      </ui:MultipleAssign>
+    </Sequence>
+    <ui:ExcelApplicationScope Password="{x:Null}" AutoSave="False" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="542.4,381.6" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" InstanceCachePeriod="3000" Visible="False" Workbook="[work_dt]" WorkbookPath="[excelPath]">
+      <ui:ExcelApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ui:WorkbookApplication">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="실행" sap:VirtualizedContainerService.HintSize="449.6,272" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:ExcelReadRange AddHeaders="True" DataTable="[dt]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="ExcelReadRange_1" SheetName="Sheet1">
+              <ui:ExcelReadRange.Range>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </ui:ExcelReadRange.Range>
+            </ui:ExcelReadRange>
+            <ui:ExcelCloseWorkbook DisplayName="Close Workbook" sap:VirtualizedContainerService.HintSize="387.2,60" sap2010:WorkflowViewState.IdRef="ExcelCloseWorkbook_1" Workbook="[work_dt]" />
+          </Sequence>
+        </ActivityAction>
+      </ui:ExcelApplicationScope.Body>
+    </ui:ExcelApplicationScope>
+    <ui:OutputDataTable DataTable="[DT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="542.4,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_1" Text="[str_dt]" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="542.4,148" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[outDT]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="sd:DataTable">[DT.Clone]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="sd:DataTable">[outDT]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="sd:DataTable" xml:space="preserve">[(
+From row In DT.AsEnumerable()
+         Where Not row.IsNull("시상일")
+         Let parsedDate = DateTime.ParseExact(row("시상일").ToString(), "yyyyMMdd", Nothing)   'row.Field(Of String)("시상일")
+         Let date1 = parsedDate.Date.ToString("yyyy년 MM월 dd일")
+         Select outDT.Rows.Add(
+             row.ItemArray.Take(4).Concat({date1}).Concat(row.ItemArray.Skip(5).Take(1)).ToArray()) 'Concat({CObj(date1)})
+).CopyToDataTable()]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+    </ui:MultipleAssign>
+    <ui:OutputDataTable DataTable="[outDT]" DisplayName="Output Data Table" sap:VirtualizedContainerService.HintSize="542.4,80.8" sap2010:WorkflowViewState.IdRef="OutputDataTable_2" Text="[str_dt]" />
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="542.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_2" Text="[str_DT]" />
+    <ui:InvokeCode ContinueOnError="{x:Null}" Code="string FilePath = @inFilePath;&#xD;&#xA;string FilePath2 = @inFilePath2;&#xD;&#xA;DataTable DT = inDT;&#xD;&#xA;//System.Console.WriteLine(FilePath);&#xD;&#xA;&#xD;&#xA;//레지스트리에 경로 설정해주기&#xD;&#xA;string Str_M_Path = @&quot;C:\hwp_보안모듈_Automation\보안모듈(Automation)\FilePathCheckerModuleExample.dll&quot;;&#xD;&#xA;string HNCRootkey = @&quot;HKEY_CURRENT_USER\Software\HNC\HwpAutomation\Modules&quot;;&#xD;&#xA;&#xD;&#xA;Microsoft.Win32.Registry.SetValue(HNCRootkey,&quot;FilePathCheckerModuleExample&quot;,Str_M_Path);&#xD;&#xA;&#xD;&#xA;try&#xD;&#xA;{&#xD;&#xA;    HwpObjectLib.IHwpObject hwp = new HwpObjectLib.HwpObject();&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;hwp.RegisterModule(&quot;FilePathCheckDLL&quot;,&quot;FilePathCheckerModuleExample&quot;);&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//화면 (안)보이기 false True dynamic 으로 동적으로 처리 하기&#xD;&#xA;&#x9;dynamic xHwpWin = hwp.XHwpWindows;&#xD;&#xA;&#x9;dynamic activeXHwpWin = xHwpWin.Active_XHwpWindow;&#xD;&#xA;&#x9;activeXHwpWin.Visible = false;&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//화면열기&#xD;&#xA;    hwp.Open(FilePath, &quot;&quot;, &quot;&quot;);&#xD;&#xA;&#x9;//전체화면&#xD;&#xA;&#x9;//hwp.Run(&quot;FrameFullScreen&quot;);&#xD;&#xA;&#x9;//필드 리스트로 출력하기 2가 갯수, 0이 아무것도 없는 거&#xD;&#xA;&#x9;string Str_Fields = hwp.GetFieldList(0,&quot;&quot;);&#xD;&#xA;&#x9;string[] A_str_field = Str_Fields.Split('\x02');&#xD;&#xA;&#x9;Console.WriteLine(&quot;출력 A_str_field : &quot; + string.Join(&quot;,&quot;, A_str_field));&#xD;&#xA;&#x9;&#xD;&#xA;&#x9;//문서 현재쪽 전체선택 후 복사해서 마지막쪽으로 가서 붙여넣기&#xD;&#xA;&#x9;//hwp.MovePos(0, 0, 0);&#xD;&#xA;&#x9;hwp.Run(&quot;SelectAll&quot;);&#xD;&#xA;&#x9;hwp.Run(&quot;Copy&quot;);&#xD;&#xA;&#x9;hwp.MovePos(3,0,0);&#xD;&#xA;&#x9;foreach (int i in Enumerable.Range(0,DT.Rows.Count-1))&#xD;&#xA;&#x9;{&#xD;&#xA;&#x9;    //Console.WriteLine(DT.Rows[i+1][0].ToString());&#xD;&#xA;&#x9;    hwp.Run(&quot;Paste&quot;);&#xD;&#xA;&#x9;    hwp.MovePos(3, 0, 0);&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;//필드에 내용바꿔서 넣어주기&#xD;&#xA;&#x9;foreach (int i in Enumerable.Range(0, DT.Rows.Count))&#xD;&#xA;&#x9;{&#xD;&#xA;&#x9;    foreach (string field in A_str_field)&#xD;&#xA;&#x9;    {&#xD;&#xA;&#x9;        hwp.PutFieldText($&quot;{field}{{{{{i}}}}}&quot;, DT.Rows[i][field].ToString());&#xD;&#xA;&#x9;    }&#xD;&#xA;&#x9;}&#xD;&#xA;&#x9;//저장&#xD;&#xA;&#x9;hwp.SaveAs(FilePath2,&quot;&quot;,&quot;&quot;);&#xD;&#xA;&#x9;//종료&#xD;&#xA;    hwp.Quit();&#xD;&#xA;&#x9;//객체해제&#xD;&#xA;&#x9;System.Runtime.InteropServices.Marshal.ReleaseComObject(hwp);&#xD;&#xA;&#x9;&#xD;&#xA;}&#xD;&#xA;catch (Exception ex)&#xD;&#xA;{&#xD;&#xA;    Console.WriteLine($&quot;An error occurred: {ex.Message}&quot;);&#xD;&#xA;}&#xD;&#xA;" DisplayName="dynamic사용한거_Invoke Code" sap:VirtualizedContainerService.HintSize="542.4,164.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1" Language="CSharp">
+      <ui:InvokeCode.Arguments>
+        <InArgument x:TypeArguments="x:String" x:Key="inFilePath">[FilePath]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="inFilePath2">[FilePath2]</InArgument>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="inDT">[outDT]</InArgument>
+      </ui:InvokeCode.Arguments>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InvokeCode>
+    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="542.4,90.4" sap2010:WorkflowViewState.IdRef="WriteLine_3" Text="aaa" />
+  </Sequence>
+</Activity>

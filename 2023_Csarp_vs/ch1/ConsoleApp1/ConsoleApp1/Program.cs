@@ -100,9 +100,9 @@ internal class Program
             outdt = (from row in dt.AsEnumerable()
                      where !row.IsNull("시상일")
                      let parsedDate = DateTime.ParseExact(row["시상일"].ToString(), "yyyy년MM월dd일", null)
-                     let date = parsedDate.Date.ToString("yyyy. MM. dd")
+                     let date1 = parsedDate.Date.ToString("yyyy. MM. dd")
                      select outdt.Rows.Add(
-                         row.ItemArray.Take(4).Concat(new object[]{date}).Concat(row.ItemArray.Skip(5).Take(1)).ToArray())
+                         row.ItemArray.Take(4).Concat(new object[]{date1}).Concat(row.ItemArray.Skip(5).Take(1)).ToArray())
                         ).CopyToDataTable();
 
             result = (from row in outdt.AsEnumerable()
@@ -135,7 +135,8 @@ internal class Program
 
             hwp.SaveAs(FilePath2,"","");
             // Hwp 종료
-            killProcess(processName);
+            //hwp.Quit();
+            //killProcess(processName);
 
             // COM 객체 해제
             Marshal.ReleaseComObject(hwp);

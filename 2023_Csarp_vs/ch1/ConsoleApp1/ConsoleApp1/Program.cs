@@ -1,5 +1,6 @@
 ﻿
 using HwpObjectLib;
+using Microsoft.VisualBasic.FileIO;
 using Microsoft.Win32;
 using System;
 using System.Data;
@@ -18,6 +19,7 @@ internal class Program
     private static void Main(string[] args)
     {
         Console.WriteLine("Hello, World!");
+        Stopwatch Ti = Stopwatch.StartNew();
         try
         {/* 한줄주석 ctrl + k + c  , ctrl + k + u
             string Str_M_Path = @"C:\hwp_보안모듈_Automation\보안모듈(Automation)\FilePathCheckerModuleExample.dll";
@@ -66,7 +68,7 @@ internal class Program
             IHwpObject hwp = new HwpObject();
             //보안모듈적용
             hwp.RegisterModule("FilePathCheckDLL", "FilePathCheckerModuleExample");
-            //화면보이기
+            //화면 보이기 / 안 보이기
             hwp.XHwpWindows.Active_XHwpWindow.Visible = true;
             //화면열기
             hwp.Open(FilePath, "", "");
@@ -95,6 +97,9 @@ internal class Program
                 hwp.Run("Paste");
                 hwp.MovePos(3, 0, 0);
             }
+            //문서 제일 위로 런타임을 짧게 하기 위해서
+            hwp.MovePos(0, 0, 0);
+
             //dt의 내용을 밑에 for문에서 하지말고 linq로 교체하기
             var outdt = dt.Clone();
             outdt = (from row in dt.AsEnumerable()
@@ -135,7 +140,8 @@ internal class Program
 
             hwp.SaveAs(FilePath2,"","");
             // Hwp 종료
-            //hwp.Quit();
+            //hwp.Clear(1);
+            hwp.Quit();
             //killProcess(processName);
 
             // COM 객체 해제
@@ -143,9 +149,10 @@ internal class Program
             Console.WriteLine("객체해제");
             //Marshal.FinalReleaseComObject(hwp);
             //hwp = null;
-
-
-       }
+            Ti.Stop();
+            //Console.WriteLine("시간 {0:00}", a.Elapsed.Seconds);
+            Console.WriteLine("시간 {0}", Ti.Elapsed);
+        }
         catch (Exception ex) {
             Console.WriteLine("예외 발생");
             Console.WriteLine(ex.Message);

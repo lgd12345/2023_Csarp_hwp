@@ -68,8 +68,8 @@ internal class Program
             IHwpObject hwp = new HwpObject();
             //보안모듈적용
             hwp.RegisterModule("FilePathCheckDLL", "FilePathCheckerModuleExample");
-            //화면 보이기 / 안 보이기
-            hwp.XHwpWindows.Active_XHwpWindow.Visible = true;
+            //화면 보이기 true / 안 보이기 false
+            hwp.XHwpWindows.Active_XHwpWindow.Visible = false;
             //화면열기
             hwp.Open(FilePath, "", "");
             //전체화면

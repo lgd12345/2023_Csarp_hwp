@@ -1,0 +1,193 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Newtonsoft.Json/13.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.Support/4.16.2": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.16.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Selenium.WebDriver/4.16.2": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/Selenium.WebDriver.targets": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newtonsoft.Json/13.0.1": {
+      "sha512": "ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Selenium.Support/4.16.2": {
+      "sha512": "xxwbDNUFUQyD9p1qsT2mjqQPADJVXYub1Z+6lzIbqLAqzbnIovo/lBQD2te5ly7OI8HZqU0vNDbi9p2Mxtz3NA==",
+      "type": "package",
+      "path": "selenium.support/4.16.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.16.2.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
+    "Selenium.WebDriver/4.16.2": {
+      "sha512": "5BI/v+LpPma+o5ijzy1jDqnbYBBu99UQYPhvZkSBnXY6PoDKLP//aMiX8XODNJHHcRwGXeaxKR61ISO6ejXExA==",
+      "type": "package",
+      "path": "selenium.webdriver/4.16.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "build/Selenium.WebDriver.targets",
+        "buildTransitive/Selenium.WebDriver.targets",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.dll",
+        "lib/netstandard2.0/WebDriver.xml",
+        "manager/linux/selenium-manager",
+        "manager/macos/selenium-manager",
+        "manager/windows/selenium-manager.exe",
+        "selenium.webdriver.4.16.2.nupkg.sha512",
+        "selenium.webdriver.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Selenium.Support >= 4.16.2",
+      "Selenium.WebDriver >= 4.16.2"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\gdcom\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_hwp_vscode\\Chapter3\\openQaSelenium\\openQaSelenium.csproj",
+      "projectName": "openQaSelenium",
+      "projectPath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_hwp_vscode\\Chapter3\\openQaSelenium\\openQaSelenium.csproj",
+      "packagesPath": "C:\\Users\\gdcom\\.nuget\\packages\\",
+      "outputPath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_hwp_vscode\\Chapter3\\openQaSelenium\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\gdcom\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\uipath연습\\uipath\\라이브러리파일": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.16.2, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.16.2, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

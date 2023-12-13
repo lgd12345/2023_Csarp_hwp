@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "52a/YAh8Turlw82v8H1FkIMJw54ZqPd1x3WePmOA+KR+l7crxgl6VOO6KhG7vgdy+ZAVUeYq0EdM3jGdF1mFEg==",
+  "success": true,
+  "projectFilePath": "D:\\C샵hwp연습용\\2023_Csarp_hwp\\2023_Csarp_hwp_vscode\\Chapter3\\openQaSelenium\\openQaSelenium.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\gdcom\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\selenium.support\\4.16.2\\selenium.support.4.16.2.nupkg.sha512",
+    "C:\\Users\\gdcom\\.nuget\\packages\\selenium.webdriver\\4.16.2\\selenium.webdriver.4.16.2.nupkg.sha512"
+  ],
+  "logs": []
+}

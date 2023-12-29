@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("openQaSelenium")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c93b848e98b890d8695087bd6f99f34a7b567110")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("openQaSelenium")]
 [assembly: System.Reflection.AssemblyTitleAttribute("openQaSelenium")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
